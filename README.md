@@ -1,0 +1,1 @@
+# Handwritten-Text-Recognition-OCR-using-CNN-BiLSTM-CTC
