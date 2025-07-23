@@ -19,35 +19,24 @@ This project uses the [IAM Handwriting Database](http://www.fki.inf.unibe.ch/dat
 - CTC Loss: Used for unsegmented sequence training
 # Requirements
 Install the following packages:
-```bash
 pip install tensorflow opencv-python-headless numpy pandas scikit-learn tqdm
-
-How to Run:
+# How to Run:
 Ensure the dataset is properly structured and the paths are correct in the script.
-
-Run the Python script:
-```bash
+# Run the Python script:
 python handwriting_ocr.py
-
-The script will:
+# The script will:
 - Load and preprocess images and labels
 - Train the model
 - Evaluate on validation and test sets
 - Save the model to handwriting_recognition_model.h5
-
-Training and Evaluation:
+# Training and Evaluation:
 - Uses the Adam optimizer (learning rate = 0.0001)
 - Trains for 30 epochs
 - Computes both character-level and word-level accuracy
-
-Output:
+# Output:
 - Trained model saved as: handwriting_recognition_model.h5
 - Console prints training logs, model summary, validation, and test accuracy
-
-Notes:
+# Notes:
 - Characters outside the defined alphabet are ignored
 - Uses multiprocessing to speed up image preprocessing
 - CTC decoding is used for final predictions
-
-License
-This project is for educational and research purposes. IAM dataset requires a license for use.
